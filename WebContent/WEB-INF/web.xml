@@ -9,4 +9,24 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>TransferSVlet</display-name>
+    <servlet-name>TransferSVlet</servlet-name>
+    <servlet-class>trans.TransferSVlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TransferSVlet</servlet-name>
+    <url-pattern>/Transfer</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>JdbcSvlet</display-name>
+    <servlet-name>JdbcSvlet</servlet-name>
+    <servlet-class>svc.JdbcSvlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JdbcSvlet</servlet-name>
+    <url-pattern>/JdbcSvlet</url-pattern>
+  </servlet-mapping>
 </web-app>
