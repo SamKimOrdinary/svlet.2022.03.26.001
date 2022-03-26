@@ -2,6 +2,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%
+	request.setCharacterEncoding("utf-8"); //요청 관련 인코딩 처리
+	response.setContentType("text/html;charset=utf-8"); //응답 관련 인코딩 처리
+
 	String name = request.getParameter("name");
 	String height = request.getParameter("height");
 	String weight = request.getParameter("weight");

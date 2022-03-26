@@ -11,6 +11,7 @@
 </head>
 <body>
 	<h1>I'm post.jsp</h1>
-	<h2>Hello <%=name %>!!!</h2>
+	
+	<h2>Hello <%= name %>!!!</h2>
 </body>
 </html>
