@@ -37,17 +37,18 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<%@ include file="menu.jsp"%>
+	<hr>
 	<h1>JDBC DAO 테스트 2</h1>
 	<%
-	List list = memberDao.getListData();
-	for (int i = 0; i < list.size(); i++) {
-		//System.out.println(list.get(i));
-		//out.println(list.get(i));
-		%>
-		<%= list.get(i) %><br>
-		<%
-	}
-
+		List list = memberDao.getListData();
+		for (int i = 0; i < list.size(); i++) {
+			//System.out.println(list.get(i));
+			//out.println(list.get(i));
+	%>
+	<%=list.get(i)%><br>
+	<%
+		}
 	%>
 </body>
 </html>

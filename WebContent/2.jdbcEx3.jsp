@@ -39,6 +39,8 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<%@ include file="menu.jsp"%>
+	<hr>
 	<h1>JDBC 날것 테스트</h1>
 	<%
 		while (rs.next()) {

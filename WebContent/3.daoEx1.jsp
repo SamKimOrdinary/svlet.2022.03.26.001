@@ -16,6 +16,8 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<%@ include file="menu.jsp"%>
+	<hr>
 	<h1>JDBC DAO 테스트 1</h1>
 	<%
 		// Insert Data
